@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/imdad/Fruitzshop/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml",
+            "map": [
+                {
+                    "source": "/home/imdad/.gradle/caches/transforms-3/9de35d788aad2404f46d0a4d731840c1/transformed/core-1.1.0/res/values-kn/values-kn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
