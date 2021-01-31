@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fruitzshop/Composant/CategorieList.dart';
 import 'package:fruitzshop/Composant/GridCombo.dart';
 import 'package:fruitzshop/Composant/SearchFruit.dart';
 
@@ -8,6 +9,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreen extends State<HomeScreen> {
+  int index = 0;
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: Color(0xFFE5E5E5),
@@ -128,17 +130,65 @@ class _HomeScreen extends State<HomeScreen> {
             ),
           ),
           Padding(
+            padding: EdgeInsets.only(
+              bottom: 49.0,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 24.0, right: 23.0),
+                  child: GridCombo(
+                    imageCombo:
+                        "assets/images/Honey-Lime-Peach-Fruit-Salad-3-725x725-1-removebg-preview 1.png",
+                    titleCombo: "Honey lime combo",
+                    fontFamily: "Spectral",
+                    weight: FontWeight.w600,
+                    size: 16,
+                    letterSpacing: -1,
+                    couleur: Color(0xFF27214D),
+                    price: "2.000",
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 24.0),
+                  child: GridCombo(
+                    imageCombo:
+                        "assets/images/Glowing-Berry-Fruit-Salad-8-720x720-removebg-preview 1.png",
+                    titleCombo: "Berry mango combo",
+                    fontFamily: "Spectral",
+                    weight: FontWeight.w600,
+                    size: 16,
+                    letterSpacing: -1,
+                    couleur: Color(0xFF27214D),
+                    price: "8.000",
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
             padding: EdgeInsets.only(left: 24.0),
-            child: GridCombo(
-              imageCombo:
-                  "assets/images/Honey-Lime-Peach-Fruit-Salad-3-725x725-1-removebg-preview 1.png",
-              titleCombo: "Honey lime combo",
-              fontFamily: "Spectral",
-              weight: FontWeight.w600,
-              size: 16,
-              letterSpacing: -1,
-              couleur: Color(0xFF27214D),
-              price: "2.000",
+            child: Row(
+              children: catList
+                  .map(
+                    (e) => Padding(
+                      padding: EdgeInsets.only(right: 22.0),
+                      child: Text(
+                        e,
+                        style: TextStyle(
+                          fontFamily: "Nino",
+                          fontWeight: FontWeight.w300,
+                          fontSize: index == catList.indexOf(e) ? 24.0 : 16.0,
+                          letterSpacing: -1,
+                          color: index == catList.indexOf(e)
+                              ? Color(0xFF27214D)
+                              : Color(0xFF938DB5),
+                        ),
+                      ),
+                    ),
+                  )
+                  .toList(),
             ),
           ),
         ],

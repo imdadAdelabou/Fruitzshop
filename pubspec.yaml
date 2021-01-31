@@ -94,7 +94,12 @@ flutter:
       fonts:
         - asset: assets/fonts/IBMPlexSans-Italic.ttf
           style: italic
-          
+    
+    - family: Nino
+      fonts:
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+            
     - family: IBMTHIN
       fonts:
         - asset: assets/fonts/IBMPlexSans-Thin.ttf

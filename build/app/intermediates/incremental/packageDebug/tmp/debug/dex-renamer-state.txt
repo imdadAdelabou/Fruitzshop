@@ -1,4 +1,4 @@
-#Mon Jan 25 01:26:51 WAT 2021
+#Sun Jan 31 22:54:47 WAT 2021
 base.0=/home/imdad/Fruitzshop/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
