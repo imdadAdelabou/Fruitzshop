@@ -3,6 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitzshop/Composant/CategorieList.dart';
 import 'package:fruitzshop/Composant/GridCombo.dart';
 import 'package:fruitzshop/Composant/SearchFruit.dart';
+import 'package:fruitzshop/Composant/SecondCombo.dart';
+import 'package:fruitzshop/Screen1/OrderScreen.dart';
+import 'package:fruitzshop/Screen1/ProductPage.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreen createState() => _HomeScreen();
@@ -12,7 +15,6 @@ class _HomeScreen extends State<HomeScreen> {
   int index = 0;
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Color(0xFFE5E5E5),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -29,9 +31,16 @@ class _HomeScreen extends State<HomeScreen> {
                   ),
                   child: SvgPicture.asset("assets/images/Group.svg"),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 32.0),
-                  child: SvgPicture.asset("assets/images/Vector.svg"),
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => OrderScreen()),
+                    );
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.only(right: 32.0),
+                    child: SvgPicture.asset("assets/images/Vector.svg"),
+                  ),
                 ),
               ],
             ),
@@ -78,7 +87,7 @@ class _HomeScreen extends State<HomeScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 24.0, right: 94, bottom: 24.0),
+            padding: EdgeInsets.only(left: 24.0, right: 94, bottom: 25.0),
             child: Text(
               "de fruits voulez-vous aujourd'hui?",
               style: TextStyle(
@@ -90,7 +99,7 @@ class _HomeScreen extends State<HomeScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(right: 66, left: 21, bottom: 40),
+            padding: EdgeInsets.only(right: 66, left: 21, bottom: 35),
             child: Stack(
               clipBehavior: Clip.none,
               children: [
@@ -131,7 +140,7 @@ class _HomeScreen extends State<HomeScreen> {
           ),
           Padding(
             padding: EdgeInsets.only(
-              bottom: 49.0,
+              bottom: 30.0,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -147,7 +156,7 @@ class _HomeScreen extends State<HomeScreen> {
                     size: 16,
                     letterSpacing: -1,
                     couleur: Color(0xFF27214D),
-                    price: "2.000",
+                    price: "2,000",
                   ),
                 ),
                 Padding(
@@ -161,7 +170,7 @@ class _HomeScreen extends State<HomeScreen> {
                     size: 16,
                     letterSpacing: -1,
                     couleur: Color(0xFF27214D),
-                    price: "8.000",
+                    price: "8,000",
                   ),
                 ),
               ],
@@ -189,6 +198,46 @@ class _HomeScreen extends State<HomeScreen> {
                     ),
                   )
                   .toList(),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 26.0, bottom: 24.0),
+            child: SvgPicture.asset("assets/images/Line 3.svg"),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 24.0),
+            child: Container(
+              height: 155,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 3,
+                itemBuilder: (context, index) {
+                  var combo = productList[index];
+                  return Padding(
+                    padding: EdgeInsets.only(right: 16.0),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => ProductPage(combo: combo),
+                          ),
+                        );
+                      },
+                      child: SecondCombo(
+                        backgroundColor: combo.couleur,
+                        imageCombo: combo.imageCombo,
+                        titleCombo: combo.nameCombo,
+                        fontFamily: "Spectral",
+                        weight: FontWeight.w700,
+                        size: 16.0,
+                        letterSpacing: -1,
+                        price: combo.price,
+                        id: combo.id,
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
         ],

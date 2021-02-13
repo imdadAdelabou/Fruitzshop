@@ -25,12 +25,16 @@ dependencies:
     sdk: flutter
   flutter_svg: ^0.19.2+1
   cupertino_icons: ^1.0.2
+  mobx: ^1.2.1+4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   integration_test:
     sdk: flutter
+  build_runner: ^1.11.1
+  mobx_codegen: ^1.1.2
+  flutter_mobx: ^1.1.0+2  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,8 +67,8 @@ flutter:
     - family: BadScript
       fonts:
         - asset: assets/fonts/BadScript-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+       # - asset: fonts/Schyler-Italic.ttf
+         # style: italic
     - family: Rubik
       fonts:
         - asset: assets/fonts/Rubik-Regular.ttf
@@ -94,7 +98,12 @@ flutter:
       fonts:
         - asset: assets/fonts/IBMPlexSans-Italic.ttf
           style: italic
-    
+
+    - family: SpectralSCItalic
+      fonts:
+        - asset: assets/fonts/SpectralSC-Italic.ttf
+          style: italic
+
     - family: Nino
       fonts:
         - asset: assets/fonts/Nunito-Italic.ttf
@@ -106,11 +115,32 @@ flutter:
 
     - family: Spectral
       fonts:
-        - asset: assets/fonts/Spectral-Regular.ttf
-
+        - asset: assets/fonts/Spectral-Regular.ttf   
 
     - family: Spectral-Sc
       fonts:
-      - asset: "assets/fonts/SpectralSC-ExtraLight.ttf"
+      - asset: assets/fonts/SpectralSC-ExtraLight.ttf
+
+    - family: Noto
+      fonts:
+      - asset: assets/fonts/NotoSans-Regular.ttf
+
+    - family: Nunito 
+      fonts:
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+     
+    - family: ubuntu
+      fonts:
+        - asset: assets/fonts/Ubuntu-Light.ttf
+
+    - family: RobotoSlab
+      fonts:
+        - asset: assets/fonts/RobotoSlab-Regular.ttf
+
+    - family: PTS
+      fonts:
+        - asset: assets/fonts/PTSans-Regular.ttf  
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
