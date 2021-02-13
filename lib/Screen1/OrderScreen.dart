@@ -2,6 +2,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fruitzshop/Composant/ButtonCompleteOrder.dart';
+import 'package:fruitzshop/Composant/CardFormField.dart';
+import 'package:fruitzshop/Composant/CardFormatter.dart';
 import 'package:fruitzshop/Composant/FormFieldOrder.dart';
 import 'package:fruitzshop/Composant/MyAppBar.dart';
 import 'package:fruitzshop/Composant/OrderTile.dart';
@@ -13,6 +16,74 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import '../StoreMobX/orderLists.dart';
 
 final counter = Counter();
+
+class CardColumn extends StatelessWidget {
+  final String textCard;
+  final String myhinText;
+  final List<TextInputFormatter> listInput;
+  CardColumn({
+    this.textCard,
+    this.myhinText,
+    this.listInput,
+  });
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 16.0,
+          ),
+          child: Text(
+            textCard,
+            style: TextStyle(
+              fontWeight: FontWeight.w200,
+              fontSize: 20.0,
+              fontFamily: "PTS",
+              color: Color(0xFF27214D),
+            ),
+          ),
+        ),
+        CardOrder(
+          myhinText: myhinText,
+          listInput: listInput,
+        ),
+      ],
+    );
+  }
+}
+
+class CardOrder extends StatelessWidget {
+  final String myhinText;
+  final List<TextInputFormatter> listInput;
+  CardOrder({
+    this.myhinText,
+    this.listInput,
+  });
+  Widget build(BuildContext context) {
+    return Container(
+      width: 134,
+      height: 56,
+      child: TextFormField(
+        inputFormatters: listInput ?? null,
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: Color(0xFFF3F1F1),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10.0),
+            borderSide: BorderSide.none,
+          ),
+          hintText: myhinText,
+          hintStyle: TextStyle(
+            fontSize: 14.0,
+            color: Color(0xFFC2BDBD),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 class OrderScreen extends StatefulWidget {
   final OrderLists orderLists;
@@ -312,7 +383,10 @@ class _OrderScreen extends State<OrderScreen> {
                               ),
                             ),
                             child: FlatButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                                _cardBottomSheet();
+                              },
                               child: Text(
                                 "Pay with card".toUpperCase(),
                                 style: TextStyle(
@@ -334,5 +408,126 @@ class _OrderScreen extends State<OrderScreen> {
         );
       },
     );
+  }
+
+  void _cardBottomSheet() {
+    showModalBottomSheet(
+        isScrollControlled: true,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(24.0),
+            topRight: Radius.circular(24.0),
+          ),
+        ),
+        context: context,
+        builder: (context) {
+          return SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).viewInsets.bottom,
+              ),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    top: -70,
+                    left: (MediaQuery.of(context).size.width * .4) + 10,
+                    child: SvgPicture.asset("assets/images/Cancel.svg"),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 24.0,
+                          top: 42,
+                          bottom: 16.0,
+                        ),
+                        child: Text(
+                          "Card Holders Name",
+                          style: TextStyle(
+                            fontFamily: "PTS",
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                            color: Color(0xFF27214D),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 24.0,
+                          bottom: 23.0,
+                        ),
+                        child: FormFieldOrder(
+                          myhinText: "Adolphus Chris",
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 24.0,
+                          bottom: 16.0,
+                        ),
+                        child: Text(
+                          "Card Number",
+                          style: TextStyle(
+                            fontFamily: "Spectral-Sc",
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20.0,
+                            color: Color(0xFF27214D),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 24.0,
+                          bottom: 27.0,
+                        ),
+                        child: CardFormField(
+                          listInput: [
+                            CardFormatter(
+                              mask: "1234 5678 9012 1314",
+                              separator: " ",
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 32.0,
+                          right: 24.0,
+                          bottom: 24.0,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CardColumn(
+                              myhinText: "10/30",
+                              textCard: "Date",
+                              listInput: [
+                                CardFormatter(
+                                  mask: "10/30",
+                                  separator: "/",
+                                ),
+                              ],
+                            ),
+                            CardColumn(
+                              myhinText: "123",
+                              textCard: "CCV",
+                              listInput: [
+                                FilteringTextInputFormatter.digitsOnly,
+                                LengthLimitingTextInputFormatter(3),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      ButtonCompleteOrder(),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        });
   }
 }
