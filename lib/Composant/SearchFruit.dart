@@ -13,9 +13,9 @@ class _SearchFruit extends State<SearchFruit> {
           borderRadius: BorderRadius.circular(16.0),
           borderSide: BorderSide.none,
         ),
-        hintText: "Recherche de combos de salades de fruits",
+        hintText: "Search for fruit salad combos",
         hintStyle: TextStyle(
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: FontWeight.w200,
           color: Color(0xFF86869E),
           fontFamily: "IBM",

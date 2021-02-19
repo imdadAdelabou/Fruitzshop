@@ -50,7 +50,7 @@ class _HomeScreen extends State<HomeScreen> {
             child: Padding(
               padding: const EdgeInsets.only(right: 10.0),
               child: Text(
-                "Mon panier",
+                "My basket",
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                   color: Color(0xFF27214D),
@@ -65,7 +65,7 @@ class _HomeScreen extends State<HomeScreen> {
             child: Row(
               children: [
                 Text(
-                  "Bonjour Tony,",
+                  "Hello Tony, ",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
@@ -75,7 +75,7 @@ class _HomeScreen extends State<HomeScreen> {
                   ),
                 ),
                 Text(
-                  "Quel combo de salade",
+                  "What fruit salad ",
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
@@ -89,7 +89,7 @@ class _HomeScreen extends State<HomeScreen> {
           Padding(
             padding: EdgeInsets.only(left: 24.0, right: 94, bottom: 25.0),
             child: Text(
-              "de fruits voulez-vous aujourd'hui?",
+              "combo do you want today?",
               style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 16,
@@ -128,7 +128,7 @@ class _HomeScreen extends State<HomeScreen> {
               bottom: 24,
             ),
             child: Text(
-              "Combo recommandé",
+              "Recommended Combo",
               style: TextStyle(
                 fontFamily: "IBMTHIN",
                 fontWeight: FontWeight.bold,

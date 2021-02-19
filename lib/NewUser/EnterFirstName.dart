@@ -65,7 +65,7 @@ class EnterFirstName extends StatelessWidget {
               bottom: 16,
             ),
             child: Text(
-              "Quel est votre prénom?",
+              "What is your firstname?",
               style: TextStyle(
                 fontSize: 20,
                 letterSpacing: -0.01,
@@ -83,7 +83,7 @@ class EnterFirstName extends StatelessWidget {
             child: FormFieldName(),
           ),
           ButtonDebut(
-            text: "Commencer à commander",
+            text: "Start Ordering",
           ),
         ],
       ),

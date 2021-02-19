@@ -6,6 +6,7 @@ class Description extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
@@ -41,10 +42,10 @@ class Description extends StatelessWidget {
                 left: 29.0, right: 30.0, bottom: 8.0, top: 59.0),
             child: Container(
               child: Text(
-                "Obtenez le combo de salade de fruits le plus frais",
+                "Get The Freshest Fruit Salad Combo",
                 style: TextStyle(
                   fontFamily: "Rubik",
-                  fontSize: 16,
+                  fontSize: 18,
                   letterSpacing: -1,
                   color: Color.fromRGBO(39, 33, 77, 1),
                   fontWeight: FontWeight.bold,
@@ -56,18 +57,17 @@ class Description extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 29.0, right: 64.0, bottom: 39),
             child: Text(
-              "Nous livrons la meilleure et la plus fraîche \ndes salades de fruits en ville. Commandez un combo dès aujourd'hui !!!",
+              "We deliver the best and freshest fruit \nsalad in town. Order for a combo \ntoday!!!",
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 14,
                 fontFamily: "Montserat",
-                letterSpacing: -1,
                 color: Color.fromRGBO(93, 87, 126, 1),
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 24, right: 24),
+            padding: const EdgeInsets.only(left: 42, right: 24),
             child: Container(
               width: 327,
               height: 56,
@@ -83,7 +83,7 @@ class Description extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    "Suivant",
+                    "Let’s Continue",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Montserat",

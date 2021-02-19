@@ -2,7 +2,7 @@ import 'package:fruitzshop/Models/Combo.dart';
 import 'package:flutter/material.dart';
 
 List<String> catList = [
-  "Lpc",
+  "Hot",
   "Populaire",
   "New combo",
   "Top",

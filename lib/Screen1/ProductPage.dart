@@ -41,7 +41,11 @@ class _ProductPage extends State<ProductPage> {
                     ),
                   ),
                 ),
-                Positioned.fill(
+                Positioned(
+                  top: 110,
+                  right: 98.0,
+                  left: 101,
+                  bottom: 32.0,
                   child: Hero(
                     tag: widget.combo.id,
                     child: Image.asset(

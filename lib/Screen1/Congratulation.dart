@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitzshop/Screen1/HomeScreen.dart';
+import 'package:fruitzshop/Screen1/TrackOrder.dart';
 
 class Congratulation extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -57,7 +58,13 @@ class Congratulation extends StatelessWidget {
                       10.0,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => TrackOrder(),
+                      ),
+                    );
+                  },
                   color: Color(0xFFFFA451),
                   child: Text(
                     "Track order",
