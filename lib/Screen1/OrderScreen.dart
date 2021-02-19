@@ -98,6 +98,7 @@ class _OrderScreen extends State<OrderScreen> {
     orders = orderLists.orderLists;
   }*/
   double maxWidth = 0.0;
+  @override
   Widget build(BuildContext context) {
     maxWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -120,26 +121,6 @@ class _OrderScreen extends State<OrderScreen> {
                     price: "20,000",
                   ),
                   nbPacks: 3,
-                ),
-              ),
-            ),
-            Container(
-              width: 199,
-              height: 56,
-              child: RaisedButton(
-                color: Color(0xFFFFA451),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                onPressed: () {
-                  _settingModalBottomSheet(context);
-                },
-                child: Text(
-                  "Checkout",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
                 ),
               ),
             ),
@@ -188,7 +169,7 @@ class _OrderScreen extends State<OrderScreen> {
                 ),
               ),
             ),*/
-            /* Spacer(),
+            Spacer(),
             Padding(
               padding: EdgeInsets.only(
                 left: 25.0,
@@ -259,7 +240,7 @@ class _OrderScreen extends State<OrderScreen> {
                   ),
                 ],
               ),
-            ),*/
+            ),
           ],
         ),
       ),

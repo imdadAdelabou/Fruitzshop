@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitzshop/Screen1/Congratulation.dart';
 
 class ButtonCompleteOrder extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -22,11 +23,18 @@ class ButtonCompleteOrder extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           child: Center(
-            child: Text(
-              "Complete Order",
-              style: TextStyle(
-                color: Color(0xFFFFA451),
-                fontSize: 12,
+            child: InkWell(
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Congratulation(),
+                ),
+              ),
+              child: Text(
+                "Complete Order",
+                style: TextStyle(
+                  color: Color(0xFFFFA451),
+                  fontSize: 12,
+                ),
               ),
             ),
           ),

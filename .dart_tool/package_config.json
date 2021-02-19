@@ -3,21 +3,15 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-12.0.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-14.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.40.6",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.41.2",
       "packageUri": "lib/",
       "languageVersion": "2.7"
-    },
-    {
-      "name": "archive",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/archive-2.0.13",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
     },
     {
       "name": "args",
@@ -27,15 +21,15 @@
     },
     {
       "name": "async",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "boolean_selector",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "build",
@@ -75,27 +69,27 @@
     },
     {
       "name": "built_collection",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-5.0.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-4.3.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.6"
     },
     {
       "name": "built_value",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.0.0-nullsafety.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-7.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.3"
     },
     {
       "name": "characters",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0-nullsafety.5",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0-nullsafety.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "charcode",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "checked_yaml",
@@ -111,9 +105,9 @@
     },
     {
       "name": "clock",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "code_builder",
@@ -123,21 +117,15 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0-nullsafety.5",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0-nullsafety.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "convert",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "1.17"
-    },
-    {
-      "name": "coverage",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/coverage-0.14.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
     },
     {
       "name": "crypto",
@@ -147,9 +135,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.2",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.0"
     },
     {
       "name": "dart_style",
@@ -159,33 +147,21 @@
     },
     {
       "name": "fake_async",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "file",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.0.0-nullsafety.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "fixnum",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-0.10.11",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutter_driver",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/packages/flutter_driver",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "flutter_mobx",
@@ -195,19 +171,13 @@
     },
     {
       "name": "flutter_svg",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.19.2+1",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.18.1",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/packages/flutter_test",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "fuchsia_remote_debug_protocol",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/packages/fuchsia_remote_debug_protocol",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -236,12 +206,6 @@
       "languageVersion": "2.3"
     },
     {
-      "name": "integration_test",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/packages/integration_test",
-      "packageUri": "lib/",
-      "languageVersion": "2.10"
-    },
-    {
       "name": "io",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/io-0.3.4",
       "packageUri": "lib/",
@@ -249,21 +213,15 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.0"
     },
     {
       "name": "json_annotation",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
-    },
-    {
-      "name": "json_rpc_2",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/json_rpc_2-2.2.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
     },
     {
       "name": "logging",
@@ -273,21 +231,21 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.6",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "mime",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/mime-0.9.7",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.0"
     },
     {
       "name": "mobx",
@@ -321,9 +279,9 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "path_drawing",
@@ -339,9 +297,9 @@
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.10.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.1"
     },
     {
       "name": "petitparser",
@@ -350,22 +308,10 @@
       "languageVersion": "2.7"
     },
     {
-      "name": "platform",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.0-nullsafety.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "pool",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/pool-1.5.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/pool-1.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "process",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.0.0-nullsafety.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.0"
     },
     {
       "name": "pub_semver",
@@ -378,6 +324,12 @@
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-0.1.8",
       "packageUri": "lib/",
       "languageVersion": "2.7"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "shelf",
@@ -395,7 +347,7 @@
       "name": "sky_engine",
       "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "1.11"
     },
     {
       "name": "source_gen",
@@ -404,70 +356,46 @@
       "languageVersion": "2.10"
     },
     {
-      "name": "source_map_stack_trace",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/source_map_stack_trace-2.1.0-nullsafety.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "source_maps",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/source_maps-0.10.10-nullsafety.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "source_span",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.4",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0-nullsafety.6",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "stream_transform",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stream_transform-2.0.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/stream_transform-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.6"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "sync_http",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/sync_http-0.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.10"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0-nullsafety.3",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.19-nullsafety.6",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.19-nullsafety.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "test_core",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/test_core-0.3.12-nullsafety.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "timing",
@@ -477,21 +405,15 @@
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0-nullsafety.5",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0-nullsafety.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.5",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "vm_service",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/vm_service-5.5.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.10"
     },
     {
       "name": "watcher",
@@ -501,15 +423,9 @@
     },
     {
       "name": "web_socket_channel",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-1.1.0",
+      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "webdriver",
-      "rootUri": "file:///home/imdad/T%C3%A9l%C3%A9chargements/flutter/.pub-cache/hosted/pub.dartlang.org/webdriver-2.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.10"
     },
     {
       "name": "xml",
@@ -530,7 +446,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-02-12T22:27:59.347352Z",
+  "generated": "2021-02-18T22:40:37.939239Z",
   "generator": "pub",
-  "generatorVersion": "2.12.0-179.0.dev"
+  "generatorVersion": "2.10.5"
 }
