@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruitzshop/Composant/AddToBasket.dart';
 import 'package:fruitzshop/Models/Combo.dart';
+import 'package:fruitzshop/Models/OrderProduct.dart';
+import 'package:fruitzshop/providers/basket_lists.dart';
+import 'package:provider/provider.dart';
+
+import 'OrderScreen.dart';
 
 class ProductPage extends StatefulWidget {
   final Combo combo;
@@ -11,6 +16,10 @@ class ProductPage extends StatefulWidget {
 
 class _ProductPage extends State<ProductPage> {
   int count = 1;
+
+  void action() {
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => OrderScreen()));
+  }
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFFFA451),
@@ -218,7 +227,9 @@ class _ProductPage extends State<ProductPage> {
                           padding: EdgeInsets.only(right: 60.0),
                           child: SvgPicture.asset("assets/images/Group 27.svg"),
                         ),
-                        AddToBasket(combo: widget.combo),
+                        AddToBasket(
+                          action: action,
+                        ),
                       ],
                     ),
                   ),

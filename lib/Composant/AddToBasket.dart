@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:fruitzshop/Models/Combo.dart';
 import 'package:fruitzshop/Models/OrderProduct.dart';
 import 'package:fruitzshop/Screen1/OrderScreen.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import '../StoreMobX/orderLists.dart';
-
-final orderLists = OrderLists();
+import 'package:fruitzshop/providers/basket_lists.dart';
+import 'package:provider/provider.dart';
 
 class AddToBasket extends StatelessWidget {
-  final Combo combo;
-  AddToBasket({this.combo});
+  final Function() action;
+  AddToBasket({this.action});
   Widget build(BuildContext context) {
     return Container(
       width: 219,
@@ -19,21 +17,7 @@ class AddToBasket extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         color: Color(0xFFFFA451),
-        onPressed: () {
-          orderLists.addOrder(
-            OrderProduct(
-              order: combo,
-              nbPacks: 2,
-            ),
-          );
-          print(orderLists.orderLists.toString());
-          Navigator.of(context).push(
-            MaterialPageRoute(
-                builder: (context) => OrderScreen(
-                      orderLists: orderLists,
-                    )),
-          );
-        },
+        onPressed: action,
         child: Text(
           "Add to basket",
           style: TextStyle(

@@ -10,12 +10,6 @@ import 'package:fruitzshop/Composant/MyAppBar.dart';
 import 'package:fruitzshop/Composant/OrderTile.dart';
 import 'package:fruitzshop/Models/Combo.dart';
 import 'package:fruitzshop/Models/OrderProduct.dart';
-import 'package:mobx/mobx.dart';
-import '../StoreMobX/counter.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import '../StoreMobX/orderLists.dart';
-
-final counter = Counter();
 
 class CardColumn extends StatelessWidget {
   final String textCard;
@@ -86,17 +80,10 @@ class CardOrder extends StatelessWidget {
 }
 
 class OrderScreen extends StatefulWidget {
-  final OrderLists orderLists;
-  OrderScreen({this.orderLists});
   _OrderScreen createState() => _OrderScreen();
 }
 
 class _OrderScreen extends State<OrderScreen> {
-  /*var orders = new List<OrderProduct>.filled(3, null, growable: true);
-  void initState() {
-    super.initState();
-    orders = orderLists.orderLists;
-  }*/
   double maxWidth = 0.0;
   @override
   Widget build(BuildContext context) {
@@ -124,51 +111,6 @@ class _OrderScreen extends State<OrderScreen> {
                 ),
               ),
             ),
-            /*Observer(
-              builder: (_) => Container(
-                height: 600,
-                child: ListView.builder(
-                  itemCount: 2,
-                  itemBuilder: widget.orderLists.orderLists.isNotEmpty
-                      ? (context, index) {
-                          var orders = widget.orderLists.orderLists;
-                          List<OrderProduct> newOrders = [];
-                          orders.forEach((value) {
-                            if (value != null) newOrders.add(value);
-                          });
-                          var order = newOrders[index];
-                          print(newOrders.toString());
-                          return newOrders.length != 1
-                              ? Column(
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                          left: 24.0, bottom: 24.0),
-                                      child: OrderTile(
-                                        order: order,
-                                      ),
-                                    ),
-                                    index != newOrders.length - 1
-                                        ? Padding(
-                                            padding: EdgeInsets.only(
-                                              bottom: 32.0,
-                                            ),
-                                            child: Divider(),
-                                          )
-                                        : Opacity(
-                                            opacity: 0.0,
-                                            child: Text("ok"),
-                                          ),
-                                  ],
-                                )
-                              : OrderTile(
-                                  order: order,
-                                );
-                        }
-                      : Text("List is empty"),
-                ),
-              ),
-            ),*/
             Spacer(),
             Padding(
               padding: EdgeInsets.only(
