@@ -22,6 +22,6 @@ Flutter representation of a Shop app UI i found in Figma.
 |------|------|
 |<img src="githubFruit/payBy.jpg" width="400">|<img src="githubFruit/completeOrder.jpg" width="400">|
 
-| 9 |10|
+| 9 | 10 |
 |------|------|
 |------|<img src="githubFruit/congratulation.jpg" width="400">|
