@@ -6,6 +6,6 @@ Flutter representation of a Restaurant app UI i found in Figma.
 
 ## 📸 ScreenShots
 
-| 1 | 2 | 3|
+| 1 | 2 |
 |-------|-------|
-|<img src="githubFruit/splashScreen.jpg" width="400">|<img src="githubFruit/description.jpg" width="400">|<img src="githubFruit/first_name.jpg" width="400">|
+|<img src="githubFruit/splashScreen.jpg" width="400">|<img src="githubFruit/description.jpg" width="400">|
